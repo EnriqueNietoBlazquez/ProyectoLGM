@@ -36,12 +36,6 @@
 							<p>Slaanesh</p>
 						</a>
 					</li>						
-					
-					<li>
-						<a href="Emperador.html" target="blank">
-							<p>Emperador</p>
-						</a>
-					</li>
 				</ul>
 			</nav>
 		</header>
@@ -49,7 +43,7 @@
 		<aside>
 			<div>
 				<p>
-					<span>E</span>stoy seguro que alguien de tu vida merece morir a tus manos
+					Estoy seguro que alguien de tu vida merece morir a tus manos
 				
 					<br><br>
 				
@@ -116,30 +110,28 @@
 		<aside>
 			<img src="Imagenes/LogoKhorne.png" alt="Logo de Khorne">
 			
-			<div>
-				<!--Debo usar el CSS en la etiqueta porque el JavaScript se complica para poder trabajar con CSS interno o externo-->
-				<div Id="Zona1" style="display:none;">
-					<img src="Imagenes/Angron.webp" alt="Primarca ascendido a principe demonio de Khorne">
-				
-					<p>
-						Primarca traidor ascendido a principe demonio de Khorne. Angron odia al emperador y a la humanidad así que Khorne no tiene que preocuparse de perderlo, además que Angron está especialmente enloquecido y ya no hay nada más en él que un títere de Khorne. Protagonizó 2 grandes eventos, el primero cuando Khorne lo poseyó para asestar un golpe que corrompió muchas hermanas de batalla y primaris (un hito historico), y el segundo cuando el primarca leal Lionel Jhonson lo derrotó, primarca que volvió gracias al emperador, por tanto estuvo implicado en uno de los recientes eventos que hizo reaccionar al emperador.
-					</p>
-				</div>
-				<div Id="Zona2" style="display:none;">
-					<img src="Imagenes/Skarbrand.webp" alt="Principe demonio exiliado de Khorne">
-				
-					<p>
-						Cuando era un principe demonio de Khorne (que lo sigue siendo) fue tentado por un demonio de Tzeentch para atacar a Khorne por la espalda para usurparle el título de Dios del caos. A Khorne no le molestó la osadia de desafiarle, le molestó que lo atacase por la espalda, así que le dió tal paliza que le arrancó la mitad del tejido de la cara hasta llegar al hueso y Skarbrand perdió el poco razozinio que tenia (los adoradores de este dios de por sí no tienen casi nada de razozinio). Skarbrand busca compensar a Khorne desde entonces.
-					</p>
-				</div>
-
-				<div class="Menu">
-					<p>Cultistas destacados</p>
-				
-					<p id="Boton1" class="desplegados">Angron</p>
-					<p id="Boton2" class="desplegados">Skarbrand</p>
-				</div>
+			<!--Debo usar el CSS en la etiqueta porque el JavaScript se complica para poder trabajar con CSS interno o externo-->
+			<div Id="Zona1" style="display:none;">
+				<img src="Imagenes/Angron.webp" alt="Primarca ascendido a principe demonio de Khorne">
+			
+				<p>
+					Primarca traidor ascendido a principe demonio de Khorne. Angron odia al emperador y a la humanidad así que Khorne no tiene que preocuparse de perderlo, además que Angron está especialmente enloquecido y ya no hay nada más en él que un títere de Khorne. Protagonizó 2 grandes eventos, el primero cuando Khorne lo poseyó para asestar un golpe que corrompió muchas hermanas de batalla y primaris (un hito historico), y el segundo cuando el primarca leal Lionel Jhonson lo derrotó, primarca que volvió gracias al emperador, por tanto estuvo implicado en uno de los recientes eventos que hizo reaccionar al emperador.
+				</p>
 			</div>
+			<div Id="Zona2" style="display:none;">
+				<img src="Imagenes/Skarbrand.webp" alt="Principe demonio exiliado de Khorne">
+			
+				<p>
+					Cuando era un principe demonio de Khorne (que lo sigue siendo) fue tentado por un demonio de Tzeentch para atacar a Khorne por la espalda para usurparle el título de Dios del caos. A Khorne no le molestó la osadia de desafiarle, le molestó que lo atacase por la espalda, así que le dió tal paliza que le arrancó la mitad del tejido de la cara hasta llegar al hueso y Skarbrand perdió el poco razozinio que tenia (los adoradores de este dios de por sí no tienen casi nada de razozinio). Skarbrand busca compensar a Khorne desde entonces.
+				</p>
+			</div>
+
+			<div class="Menu">
+				<p>Cultistas destacados</p>
+			
+				<p id="Boton1" class="desplegados">Angron</p>
+				<p id="Boton2" class="desplegados">Skarbrand</p>
+			</div>	
 		</aside>
 		
 		<footer>
@@ -202,7 +194,7 @@
 				<tr>
 					<th>Forma de adorarle</th>
 					<td>Perseguir mentirosos y traidores</td>
-					<td>Asesinar sin usar engaños ni maquinaciones ni cualquier cosa de juego sucio para conseguir la oportunidad o incubrilo, solamente armas que no sean a distancia y superioridad numerica</td>
+					<td>Asesinar sin usar engaños ni maquinaciones <br> ni cualquier cosa de juego sucio para conseguir la oportunidad o incubrilo, <br solamente armas que no sean a distancia y superioridad numerica</td>
 					<td></td>
 				</tr>
 				
@@ -254,7 +246,51 @@
 					<td></td>
 				</tr>
 			</table>
+			
+			<div>
+				<button type="button" id="BotonFormulario">¿Qué dios del caos iria a por ti?</button>
+			</div>			
 		</footer>
+		
+		<form id="FormularioDeteccion" style="display:none;">
+			<fieldset>
+				<legend>Estás de vacaciones, llega la noche, cual sería una noche perfecta</legend>
+				<select id="Gustos">
+					<option value="Slaanesh">Fiesta loca con todo tipo de cosas al tu alrededor esperando a que las cojas pero sin obligarte</option>
+					<option value="Nurgle">Estoy cansado, solo quiero dormir.</option>
+					<option value="Tzeentch">Tratar de aprender algo y conseguirlo, aunque nadie te lo pida pero es algo que puedes sacarle utilidad</option>
+					<option value="Khorne">Esa noche pero bajo otra condición concreta, quiero ver sufrir a alguien que se lo merezca, algún agresor o algo así y poder cotillear</option>
+				</select>
+			</fieldset>
+	
+			<div>
+				<p>Alguna vez has tenido alguna responsabilidad o alguna cosa que aunque te gustase, requería trabajo, y la has pospuesto por algún placer banal? Películas, comida, etc?</p>
+				
+				<input type="checkbox" id="Voluntad">
+			</div>
+
+			<fieldset>
+				<legend>Tú trabajo, no el que tengas si no el que te gustaría tener esta relacionado con</legend>
+				<p>El ocio y el entretenimiento</p> <input type="radio" name="VidaDeseada" value="Slaanesh">
+
+				<br>
+
+				<p>Las tecnologías y ciencias</p> <input type="radio" name="VidaDeseada" value="Tzeentch" checked>
+				
+				<br>
+
+				<p>Deportes o fuerzas de seguridad</p> <input type="radio" name="VidaDeseada" value="Khorne">
+				
+				<br>
+				
+				<p>Solo quiero uno fácil y tranquilo para tener tiempo para atender mis asuntos</p> <input type="radio" name="VidaDeseada" value="Nurgle">
+			</fieldset>
+
+			<div>
+				<!--De tratar de usar type submit, se recarga la página cada vez que cierro el alert-->
+				<button type="button" id="BotonAveriguarDios">Obtener Resultado</button>
+			</div>
+		</form>		
 		
 		
 		
