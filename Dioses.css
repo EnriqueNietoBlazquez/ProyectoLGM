@@ -1,0 +1,406 @@
+/*Zona de configuración inicial*/
+* {
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+
+
+/*Zona de control de la estructura*/
+body {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+header, footer{
+	width:100%;
+}
+
+aside {
+	width:30%;
+}
+
+main{
+	width:40%;
+}
+
+aside img {
+	width:80%;
+	height:48vh;
+}
+
+article img {
+	width:100%;
+	height:70vh;
+}
+
+article > *{
+	width:100%;
+}
+
+iframe {
+	width:25vw;
+	height:40vh;
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+
+
+/*Zona de colores*/
+/*Generales*/
+header{
+	background-color:rgb(76, 40, 130);
+}
+
+footer{
+	background-color:rgb(239, 184, 16);
+}
+
+
+/*Tzeentch*/
+#Tzeentch aside:nth-child(2) {
+	background-color:#e9e284;
+}
+
+#Tzeentch aside:nth-child(4) {
+	background-color:#70ee65;
+}
+
+#Tzeentch article {
+	background-color:#62acc2;
+}
+
+
+/*Nurgle*/
+#Nurgle aside {
+	background-color:#747372;
+}
+
+#Nurgle article {
+	background-color:#227a22;
+}
+
+
+/*Khorne*/
+#Khorne aside {
+	background-color:#dd7443;
+}
+
+#Khorne article {
+	background-color:#fc5a5a;
+}
+
+
+/*Slaanesh*/
+#Slaanesh aside {
+	background-color:#f16b6b;
+}
+
+#Slaanesh article {
+	background-color:#bb1d86;
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+
+
+/*Zona del menú*/
+ul {
+	display:flex;
+	justify-content:center;
+}
+
+ul > li {
+	display:inline-block;
+}
+
+ul > li > a {
+	text-decoration:none;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:10vh;
+	width:10vw;
+	color:white;
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+
+
+/*Zona de mensaje de tentación del dios*/
+aside:nth-child(2) > div:first-child > p{
+	border:dashed 4px #a87b05;
+	width:25vw;
+	text-align:center;
+	background-color:#000080;
+	color:#fc0176;
+}
+
+span {
+	font-size:30px;
+	color:#a87b05;
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+
+
+/*Zona de tabla (el h2 cuenta como introducción a la tabla0), que en este caso es todo lo referente al footer*/
+h2 {
+	background-color:black;
+	color:white;
+	border-top:2px solid white;
+	border-bottom:2px solid white;	
+}
+
+table {
+	border-collapse:collapse;
+	/*Hace falta para hacerlo responsivo*/
+	width:100%;
+}
+
+.PrimeraColumna {
+	border-right:4px solid #000000;
+	background-color:#84939c;
+	width:10%;
+}
+
+.PrimeraFila {
+	border-bottom:4px solid #000000;
+	background-color:rgb(76, 40, 130);
+	color:#ffffff;
+}
+
+.CeldaImportante {
+	border:solid 6px #00ff00;
+	background-color:#000080;
+	color:#ffffff;
+}
+
+.Nada {
+	background-color:#000000;
+}
+
+tr {
+	height:10vh;
+}
+
+td {
+	text-align:center;
+}
+
+ol {
+	list-style-type:upper-roman;
+	list-style-position:inside;
+	text-align:center;
+}
+
+
+
+/*Zona de enlaces externos*/
+aside:nth-child(2) > div:first-child {
+	width:100%;
+	height:50%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+aside:nth-child(2) > div:last-child {
+	width:100%;
+	height:50%;
+}
+
+aside:nth-child(2) > div:last-child > div:first-child{
+	width:90%;
+	margin:auto;
+}
+
+aside:nth-child(2) > div:last-child > div:first-child > p{
+	width:100%;
+	color:#ff8000;
+	border-bottom:2px solid #ff8000;
+	font-weight:bold;
+	font-size:18px;
+	display:block;
+}
+
+aside:nth-child(2) div:last-child  a div{
+	width:90%;
+	height:100%;
+	background-color:#04d9ff;
+	margin:auto;
+	text-align:center;
+	align-content: center;
+}
+
+aside:nth-child(2) div:last-child  a div p{
+	background-color:#04d9ff;
+	width:100%;
+	color:#ffffff;
+	text-align:center;
+	margin: auto;
+}
+
+aside:nth-child(2) div:last-child  a{
+	text-decoration:none;
+	width: 100%;
+	height: 30%;
+	display: block;
+}
+
+aside:nth-child(2) > div:last-child > div:last-child {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	height:50%;
+	margin-top: 7%;
+}
+
+.TodosMenosTzeentch aside:nth-child(2) {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	align-items:center;
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+
+
+/*Zona de efectos del menú y tabla*/
+li:hover{
+	background-color:#000000;
+	color:#ffffff;
+}
+
+li:hover p {
+	color:#bf930d;
+	font-weight:bold;
+	font-size:30px;
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+
+
+/*Zona de desplegable*/
+aside:nth-child(4) {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	position: relative;
+}
+
+aside:nth-child(4) > div{
+	width:100%;
+	height:50%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+/*Si no uso la clase, con tanto div y p, va a ser muy lioso entender luego para qué era cada selector*/
+.Menu p {
+	width:90%;
+	height:50px;
+	background-color:rgb(76, 40, 130);
+	color:white;
+	align-content:center;
+	text-align:center;
+	margin: auto;
+}
+
+.Menu:hover .desplegados{
+	display:block; /*Hace que se muestre el elemento*/
+}
+
+.Menu{
+	width:90%;
+	height:10%;
+}
+
+#Zona1 {
+	display:none;
+	justify-content:center;
+	align-content:center;
+	align-items:center;
+	flex-wrap: wrap;
+}
+
+#Zona2 {
+	display:none;
+	justify-content:center;
+	justify-content:center;
+	align-content:center;
+	align-items:center;
+	flex-wrap: wrap;
+}
+
+aside:nth-child(4) > div > img{
+	width:80%;
+	height:48vh;
+}
+
+/*A CSS no le gusta que me refiera a más de un id a la vez, por eso hace falta la clase*/
+.desplegados {
+	display:none;	/*Oculta el elemento*/
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+
+
+/*Zona de lanzador de quiz*/
+footer div:last-child {
+	position:fixed;
+	bottom:0;
+	right:0;
+	width:20%;
+	height:10vh;
+	background-color:rgb(76, 40, 130);
+	align-content:center;
+}
+
+footer div:last-child button {
+	display:block;
+	margin:auto;
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+
+
+/*Zona de quiz*/
+form {
+	width:70%;
+	height:50vh;
+	display:none;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	background-color:#f74a9b;
+	position:fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+form > * {
+	width:80%;
+}
+
+form > div > * {
+	text-align: center;
+	margin: auto;
+}
+
+form > div:nth-child(2) > input {
+	margin-top:1%;
+	display:block;
+}
+
+form > fieldset:nth-child(3) > p {
+	display:inline-block;
+}
+/*-------------------------------------------------------------------------------------------------*/
