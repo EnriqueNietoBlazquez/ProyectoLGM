@@ -1,21 +1,3 @@
-/*Zona de boton eclipsador*/
-function ApareceEmperador() {
-	document.getElementById("LordOfMankind").style.display = "block";
-	document.getElementById("ChaosGods").style.display = "none";
-}
-
-function ApareceCaos() {
-	document.getElementById("ChaosGods").style.display = "block";
-	document.getElementById("LordOfMankind").style.display = "none";
-}
-
-document.getElementById("BotonCaos").onclick = ApareceCaos;
-document.getElementById("BotonEmperador").onclick = ApareceEmperador;
-/*-------------------------------------------------------------------------------------------------*/
-
-
-
-
 /*Zona de transiciones (aunque parezca complicada es prácticamente copiar y pegar)*/
 /*Necesito que sea global por lo que un let no sirve pero va a almacenar un valor que no va a cambiar, por tanto const es lo mejor*/
 const elementoTzeentch = document.getElementById("Tzeentch");
