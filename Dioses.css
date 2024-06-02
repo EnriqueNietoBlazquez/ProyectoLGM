@@ -1,7 +1,5 @@
 /*Zona de configuración inicial*/
 * {
-	margin:0px;
-	padding:0px;
 	box-sizing:border-box;
 }
 /*-------------------------------------------------------------------------------------------------*/
@@ -12,6 +10,8 @@
 body {
 	display:flex;
 	flex-wrap:wrap;
+	margin:0px;
+	padding:0px;
 }
 
 header, footer{
@@ -34,6 +34,11 @@ aside img {
 article img {
 	width:100%;
 	height:70vh;
+}
+
+#Khorne article img {
+	width:100%;
+	height:90vh;
 }
 
 article > *{
@@ -72,6 +77,10 @@ footer{
 	background-color:#62acc2;
 }
 
+#Tzeentch main {
+	background-color:#62acc2;
+}
+
 
 /*Nurgle*/
 #Nurgle aside {
@@ -79,6 +88,10 @@ footer{
 }
 
 #Nurgle article {
+	background-color:#227a22;
+}
+
+#Nurgle main {
 	background-color:#227a22;
 }
 
@@ -92,6 +105,10 @@ footer{
 	background-color:#fc5a5a;
 }
 
+#Khorne main {
+	background-color:#fc5a5a;
+}
+
 
 /*Slaanesh*/
 #Slaanesh aside {
@@ -99,6 +116,10 @@ footer{
 }
 
 #Slaanesh article {
+	background-color:#bb1d86;
+}
+
+#Slaanesh main {
 	background-color:#bb1d86;
 }
 /*-------------------------------------------------------------------------------------------------*/
@@ -141,11 +162,21 @@ span {
 	font-size:30px;
 	color:#a87b05;
 }
+
+.TodosMenosTzeentch aside:nth-child(2) > div:first-child > p:first-letter{
+	font-size:30px;
+	color:#a87b05;
+}
 /*-------------------------------------------------------------------------------------------------*/
 
 
 
 /*Zona de tabla (el h2 cuenta como introducción a la tabla0), que en este caso es todo lo referente al footer*/
+footer * {
+	margin:0px;
+	padding:0px;
+}
+
 h2 {
 	background-color:black;
 	color:white;
@@ -191,9 +222,11 @@ td {
 
 ol {
 	list-style-type:upper-roman;
-	list-style-position:inside;
 	text-align:center;
+	/*La siguiente linea es necesaria para la lista quede bien en la tabla*/
+	list-style-position:inside;
 }
+/*-------------------------------------------------------------------------------------------------*/
 
 
 
@@ -279,6 +312,11 @@ li:hover p {
 	font-weight:bold;
 	font-size:30px;
 }
+
+header * {
+	margin:0px;
+	padding:0px;
+}
 /*-------------------------------------------------------------------------------------------------*/
 
 
@@ -287,15 +325,6 @@ li:hover p {
 aside:nth-child(4) {
 	display:flex;
 	flex-wrap:wrap;
-	justify-content:center;
-	align-items:center;
-	position: relative;
-}
-
-aside:nth-child(4) > div{
-	width:100%;
-	height:50%;
-	display:flex;
 	justify-content:center;
 	align-items:center;
 }
@@ -308,11 +337,12 @@ aside:nth-child(4) > div{
 	color:white;
 	align-content:center;
 	text-align:center;
-	margin: auto;
+	margin:auto;
 }
 
 .Menu:hover .desplegados{
 	display:block; /*Hace que se muestre el elemento*/
+	position:relative;
 }
 
 .Menu{
@@ -325,7 +355,8 @@ aside:nth-child(4) > div{
 	justify-content:center;
 	align-content:center;
 	align-items:center;
-	flex-wrap: wrap;
+	flex-wrap:wrap;
+	text-align:center;
 }
 
 #Zona2 {
@@ -334,7 +365,8 @@ aside:nth-child(4) > div{
 	justify-content:center;
 	align-content:center;
 	align-items:center;
-	flex-wrap: wrap;
+	flex-wrap:wrap;
+	text-align:center;
 }
 
 aside:nth-child(4) > div > img{
@@ -402,5 +434,15 @@ form > div:nth-child(2) > input {
 
 form > fieldset:nth-child(3) > p {
 	display:inline-block;
+}
+
+form * {
+	margin:0px;
+	padding:0px;
+}
+
+form div:last-child button {
+	margin:auto;
+	display:block;
 }
 /*-------------------------------------------------------------------------------------------------*/
