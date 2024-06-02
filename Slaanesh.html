@@ -36,12 +36,6 @@
 							<p>Nurgle</p>
 						</a>
 					</li>
-					
-					<li>
-						<a href="Emperador.html" target="blank">
-							<p>Emperador</p>
-						</a>
-					</li>
 				</ul>
 			</nav>
 		</header>
@@ -49,7 +43,7 @@
 		<aside>
 			<div>
 				<p>
-					<span>T</span>rabajar y trabajar eternamente o hasta morir 
+					Trabajar y trabajar eternamente o hasta morir 
 					
 					<br><br>
 					
@@ -107,37 +101,35 @@
 		<aside>
 			<img src="Imagenes/LogoSlaanesh.png" alt="Logo de Slaanesh">
 		
-			<div>
-				<!--Debo usar el CSS en la etiqueta porque el JavaScript se complica para poder trabajar con CSS interno o externo
-				si hay JavaScript de por medio, debe haber id
-				-->
-				<div Id="Zona1" style="display:none;">
-					<img src="Imagenes/Lucius.jpg" alt="Lucius el sempiterno">
-				
-					<p>
-						Antes era increiblemente hermoso y con un pelo genial pero desarrolló la costumbre de autolesionarse y acabó calvo, con los ojos oscuros, palido y lleno de arañazos. Slaanesh se interesó mucho por él y le concedió la inmortalidad de una manera muy particular. 
-						
-						<br><br>
-						
-						<em>
-							Solamente morirá asesinado y renacerá en aquel que le asesine, siempre y cuando quien le asesinó haya sentido en ello, el más minimo placer, orgullo o satisfaccion, además este pobre desafortunado se convertirá en parte de él, totalmente lúcido pero atrapado y por tanto pasará el resto de la eternidad sufriendo pero teniendo la oportunidad de reirse de él, insultarle, acosarle gritando cada vez que Lucius quiera dormirse para mantenerlo despierto...sabiendo que consiguió matarle, y Lucius tendrá que aguantar todo eso”.
-						</em>
-					</p>
-				</div>
-				<div Id="Zona2" style="display:none;">
-					<img src="Imagenes/Typhus.webp" alt="Marine que obró la increible hazaña de conseguirle a su dios un primarca y una legion">
-				
-					<p>
-						Un demonio de Tzeentch consiguió infiltrarse en el palacio de Slaanesh y rapar a Slaanesh. Slaanesh al darse cuenta, pego un grito enorme del susto y pensó que hacia sido uno de sus demonios, llamado La mascara, así que lo maldijo. Nunca podria parar de bailar pero contaria con el poder de obligar a bailar a todos a su alrededor
-					</p>
-				</div>
+			<!--Debo usar el CSS en la etiqueta porque el JavaScript se complica para poder trabajar con CSS interno o externo
+			si hay JavaScript de por medio, debe haber id
+			-->
+			<div Id="Zona1" style="display:none;">
+				<img src="Imagenes/Lucius.jpg" alt="Lucius el sempiterno">
+			
+				<p>
+					Antes era increiblemente hermoso y con un pelo genial pero desarrolló la costumbre de autolesionarse y acabó calvo, con los ojos oscuros, palido y lleno de arañazos. Slaanesh se interesó mucho por él y le concedió la inmortalidad de una manera muy particular. 
+					
+					<br><br>
+					
+					<em>
+						Solamente morirá asesinado y renacerá en aquel que le asesine, siempre y cuando quien le asesinó haya sentido en ello, el más minimo placer, orgullo o satisfaccion, además este pobre desafortunado se convertirá en parte de él (como se ve en su armadura), totalmente lúcido pero atrapado y por tanto pasará el resto de la eternidad sufriendo pero teniendo la oportunidad de reirse de él, insultarle, acosarle gritando cada vez que Lucius quiera dormirse para mantenerlo despierto...sabiendo que consiguió matarle, y Lucius tendrá que aguantar todo eso”.
+					</em>
+				</p>
+			</div>
+			<div Id="Zona2" style="display:none;">
+				<img src="Imagenes/Mascara.webp" alt="Demonio de Slaanesh">
+			
+				<p>
+					Un demonio de Tzeentch consiguió infiltrarse en el palacio de Slaanesh y rapar a Slaanesh. Slaanesh al darse cuenta, pego un grito enorme del susto y pensó que hacia sido uno de sus demonios, llamado La mascara, así que lo maldijo. Nunca podria parar de bailar pero contaria con el poder de obligar a bailar a todos a su alrededor
+				</p>
+			</div>
 
-				<div class="Menu">
-					<p>Cultistas destacados</p>
-				
-					<p id="Boton1" class="desplegados">Lucius el sempiterno</p>
-					<p id="Boton2" class="desplegados">La máscara de Slaanesh</p>
-				</div>
+			<div class="Menu">
+				<p>Cultistas destacados</p>
+			
+				<p id="Boton1" class="desplegados">Lucius el sempiterno</p>
+				<p id="Boton2" class="desplegados">La máscara de Slaanesh</p>
 			</div>
 		</aside>
 		
@@ -254,7 +246,51 @@
 					<td></td>
 				</tr>
 			</table>
+
+			<div>
+				<button type="button" id="BotonFormulario">¿Qué dios del caos iria a por ti?</button>
+			</div>			
 		</footer>
+		
+		<form id="FormularioDeteccion" style="display:none;">
+			<fieldset>
+				<legend>Estás de vacaciones, llega la noche, cual sería una noche perfecta</legend>
+				<select id="Gustos">
+					<option value="Slaanesh">Fiesta loca con todo tipo de cosas al tu alrededor esperando a que las cojas pero sin obligarte</option>
+					<option value="Nurgle">Estoy cansado, solo quiero dormir.</option>
+					<option value="Tzeentch">Tratar de aprender algo y conseguirlo, aunque nadie te lo pida pero es algo que puedes sacarle utilidad</option>
+					<option value="Khorne">Esa noche pero bajo otra condición concreta, quiero ver sufrir a alguien que se lo merezca, algún agresor o algo así y poder cotillear</option>
+				</select>
+			</fieldset>
+	
+			<div>
+				<p>Alguna vez has tenido alguna responsabilidad o alguna cosa que aunque te gustase, requería trabajo, y la has pospuesto por algún placer banal? Películas, comida, etc?</p>
+				
+				<input type="checkbox" id="Voluntad">
+			</div>
+
+			<fieldset>
+				<legend>Tú trabajo, no el que tengas si no el que te gustaría tener esta relacionado con</legend>
+				<p>El ocio y el entretenimiento</p> <input type="radio" name="VidaDeseada" value="Slaanesh">
+
+				<br>
+
+				<p>Las tecnologías y ciencias</p> <input type="radio" name="VidaDeseada" value="Tzeentch" checked>
+				
+				<br>
+
+				<p>Deportes o fuerzas de seguridad</p> <input type="radio" name="VidaDeseada" value="Khorne">
+				
+				<br>
+				
+				<p>Solo quiero uno fácil y tranquilo para tener tiempo para atender mis asuntos</p> <input type="radio" name="VidaDeseada" value="Nurgle">
+			</fieldset>
+
+			<div>
+				<!--De tratar de usar type submit, se recarga la página cada vez que cierro el alert-->
+				<button type="button" id="BotonAveriguarDios">Obtener Resultado</button>
+			</div>
+		</form>		
 		
 		
 		
