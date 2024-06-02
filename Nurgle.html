@@ -36,12 +36,6 @@
 							<p>Slaanesh</p>
 						</a>
 					</li>						
-					
-					<li>
-						<a href="Emperador.html" target="blank">
-							<p>Emperador</p>
-						</a>
-					</li>
 				</ul>
 			</nav>
 		</header>
@@ -49,7 +43,7 @@
 		<aside>
 			<div>
 				<p>
-					<span>N</span>o puedes enfrentarte a las montañas, no puedes abarcarlo todo ni cambiar nada 
+					No puedes enfrentarte a las montañas, no puedes abarcarlo todo ni cambiar nada 
 					
 					<br><br>
 					
@@ -119,32 +113,31 @@
 		<aside>
 			<img src="Imagenes/LogoNurgle.png" alt="Logo de Nurgle">
 			
-			<div>
-				<!--Debo usar el CSS en la etiqueta porque el JavaScript se complica para poder trabajar con CSS interno o externo
-				si hay JavaScript de por medio, debe haber id
-				-->
-				<div Id="Zona1" style="display:none;">
-					<img src="Imagenes/Kugath.webp" alt="Nurglete que ascendió a principe demonio">
-				
-					<p>
-						Un pequeño diablillo que estaba jugando en la espalda de Nurgle cuando este estaba creando la enfermedad perfecta, cuando lo consiguió, Ku'Gath se cayó al caldero de Nurgle y para no ahogarse, se la bebió entera, esta enfermedad dió tanto poder a Ku'Gath que ascendió por sí mismo del rango más bajo a un principe demonio. Nurgle se alegró pero Ku'Gath lleva desde ese momento lleno de culpa buscando devolver a Nurgle la enfermedad que le quitó. Al ser originalmente un nurglete, su aspecto es identico al de Nurgle.
-					</p>
-				</div>
-				<div Id="Zona2" style="display:none;">
-					<img src="Imagenes/Typhus.webp" alt="Marine que obró la increible hazaña de conseguirle a su dios un primarca y una legion">
-				
-					<p>
-						Marine espacial del primarca Mortarion, engañó a este para caer ante las manos de Nurgle. Mortarion tuvo que elegir entre dar su alma y las almas de todos sus marines espaciales, o sufrir todos ellos eternamente, así que aceptó el trato. Nurgle adora a Typhus por ser el responsable de conseguirle un primarca y toda su legión sin que Nurgle tuviera que hacer nada, solo esperar en el momento y lugar adecuados a que Typhus llegará con ellos.
-					</p>
-				</div>
-
-				<div class="Menu">
-					<p>Cultistas destacados</p>
-				
-					<p id="Boton1" class="desplegados">Ku'Gath</p>
-					<p id="Boton2" class="desplegados">Typhus</p>
-				</div>
+			<!--Debo usar el CSS en la etiqueta porque el JavaScript se complica para poder trabajar con CSS interno o externo
+			si hay JavaScript de por medio, debe haber id
+			-->
+			<div Id="Zona1" style="display:none;">
+				<img src="Imagenes/Kugath.webp" alt="Nurglete que ascendió a principe demonio">
+			
+				<p>
+					Un pequeño diablillo que estaba jugando en la espalda de Nurgle cuando este estaba creando la enfermedad perfecta, cuando lo consiguió, Ku'Gath se cayó al caldero de Nurgle y para no ahogarse, se la bebió entera, esta enfermedad dió tanto poder a Ku'Gath que ascendió por sí mismo del rango más bajo a un principe demonio. Nurgle se alegró pero Ku'Gath lleva desde ese momento lleno de culpa buscando devolver a Nurgle la enfermedad que le quitó. Al ser originalmente un nurglete, su aspecto es identico al de Nurgle.
+				</p>
 			</div>
+			<div Id="Zona2" style="display:none;">
+				<img src="Imagenes/Typhus.webp" alt="Marine que obró la increible hazaña de conseguirle a su dios un primarca y una legion">
+			
+				<p>
+					Marine espacial del primarca Mortarion, engañó a este para caer ante las manos de Nurgle. Mortarion tuvo que elegir entre dar su alma y las almas de todos sus marines espaciales, o sufrir todos ellos eternamente, así que aceptó el trato. Nurgle adora a Typhus por ser el responsable de conseguirle un primarca y toda su legión sin que Nurgle tuviera que hacer nada, solo esperar en el momento y lugar adecuados a que Typhus llegará con ellos.
+				</p>
+			</div>
+
+			<div class="Menu">
+				<p>Cultistas destacados</p>
+			
+				<p id="Boton1" class="desplegados">Ku'Gath</p>
+				<p id="Boton2" class="desplegados">Typhus</p>
+			</div>
+			
 		</aside>
 			
 		<footer>
@@ -268,7 +261,51 @@
 					<td></td>
 				</tr>
 			</table>
+
+			<div>
+				<button type="button" id="BotonFormulario">¿Qué dios del caos iria a por ti?</button>
+			</div>			
 		</footer>
+		
+		<form id="FormularioDeteccion" style="display:none;">
+			<fieldset>
+				<legend>Estás de vacaciones, llega la noche, cual sería una noche perfecta</legend>
+				<select id="Gustos">
+					<option value="Slaanesh">Fiesta loca con todo tipo de cosas al tu alrededor esperando a que las cojas pero sin obligarte</option>
+					<option value="Nurgle">Estoy cansado, solo quiero dormir.</option>
+					<option value="Tzeentch">Tratar de aprender algo y conseguirlo, aunque nadie te lo pida pero es algo que puedes sacarle utilidad</option>
+					<option value="Khorne">Esa noche pero bajo otra condición concreta, quiero ver sufrir a alguien que se lo merezca, algún agresor o algo así y poder cotillear</option>
+				</select>
+			</fieldset>
+	
+			<div>
+				<p>Alguna vez has tenido alguna responsabilidad o alguna cosa que aunque te gustase, requería trabajo, y la has pospuesto por algún placer banal? Películas, comida, etc?</p>
+				
+				<input type="checkbox" id="Voluntad">
+			</div>
+
+			<fieldset>
+				<legend>Tú trabajo, no el que tengas si no el que te gustaría tener esta relacionado con</legend>
+				<p>El ocio y el entretenimiento</p> <input type="radio" name="VidaDeseada" value="Slaanesh">
+
+				<br>
+
+				<p>Las tecnologías y ciencias</p> <input type="radio" name="VidaDeseada" value="Tzeentch" checked>
+				
+				<br>
+
+				<p>Deportes o fuerzas de seguridad</p> <input type="radio" name="VidaDeseada" value="Khorne">
+				
+				<br>
+				
+				<p>Solo quiero uno fácil y tranquilo para tener tiempo para atender mis asuntos</p> <input type="radio" name="VidaDeseada" value="Nurgle">
+			</fieldset>
+
+			<div>
+				<!--De tratar de usar type submit, se recarga la página cada vez que cierro el alert-->
+				<button type="button" id="BotonAveriguarDios">Obtener Resultado</button>
+			</div>
+		</form>		
 		
 		
 		
