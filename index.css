@@ -120,17 +120,17 @@ main > section:last-child{
 
 
 
-/*Zona para preparar el JavaScript*/
-#LordOfMankind {
-	display:none;
-}
-/*-------------------------------------------------------------------------------------------------*/
-
-
-
 /*Zona de introduccion a Warhammer 40K*/
 footer {
 	width:80vw;
 	margin:auto;
+}
+
+summary {
+	color:#ffffff;
+}
+
+ul {
+	margin-left:5%;
 }
 /*-------------------------------------------------------------------------------------------------*/
