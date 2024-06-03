@@ -112,10 +112,6 @@ main > section:last-child{
 #ChaosGods > article > div > div {
 	justify-content:center;
 }
-
-#ChaosGods {
-	overflow:auto;
-}
 /*-------------------------------------------------------------------------------------------------*/
 
 
@@ -124,6 +120,7 @@ main > section:last-child{
 footer {
 	width:80vw;
 	margin:auto;
+	clear:both;
 }
 
 summary {
