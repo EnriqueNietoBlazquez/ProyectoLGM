@@ -56,6 +56,7 @@ main > section:first-child{
 
 main > section:last-child{
 	height:5vh;
+	clear:both;
 }
 /*-------------------------------------------------------------------------------------------------*/
 
@@ -120,7 +121,6 @@ main > section:last-child{
 footer {
 	width:80vw;
 	margin:auto;
-	clear:both;
 }
 
 summary {
